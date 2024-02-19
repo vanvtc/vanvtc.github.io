@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link  rel="stylesheet"href="Login.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="login">
+        <div class="head-login">
+          <div class="nav-link">
+            <a href="" class="link">About</a>|<a href="" class="link">How to use</a>
+          </div>
+          <div class="list-country">
+            <input type="tel" class="phone"id="phone">
+          </div>
+        </div>
+        <h1> Login</h1>
+        <h2>Enter your email and password to sign in!</h2>
+        <form>
+        <div class="group-form">
+            <label>Login*</label>
+            <input class="input"type="text"placeholder="Login, Email,or phone number" required>
+        </div>
+        <div class="group-form">
+            <label>Password*</label>
+            <input class="input"type="Password"placeholder="Enter your password" required>
+        </div>
+        <div class="info-login"> 
+            <div class="keep-me"> <input type="checkbox" checked><label>Keep me logged in </label></div>
+          <div class="forgot-password">
+            <label> forgot password ?</label>
+             </div>
+          
+        </div>
+        <input class="submit-button"type="submit"value="Sign In">
+        <div class="bar-line">
+          <div class="line-1"></div>
+          <div class="info-message">or Login with</div>
+          <div class="line-2"></div>
+        </div>
+        <div class="social-link">
+            
+            <a class="link">
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+           
+            <a class="link">
+                <i class="fab fa-facebook"></i>
+
+            </a>
+            <a class="link">
+                <i class="fab fa-google"></i>
+
+            </a>
+        </div>
+        <div class="terms">
+            <a class="link">Terms</a>|
+            <a class="link">Privacy</a>|
+            <a class="link">Status</a>|
+            <a class="link">Data</a>
+        </div>
+        <div class="copy-right">
+            &copy 2024 LIMS. ALl Rights Reserved
+        </div>
+    </div>
+</form>
+<script>
+     const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+</script>
+</body>
+</html>
